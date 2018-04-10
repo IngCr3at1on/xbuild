@@ -1,4 +1,4 @@
-package main
+package main // import "github.com/IngCr3at1on/x/build/example/cmd/example"
 
 import (
 	"fmt"

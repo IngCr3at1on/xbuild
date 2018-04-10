@@ -1,4 +1,4 @@
-package main
+package main // import "github.com/IngCr3at1on/x/build/example/cmd/build"
 
 import (
 	"fmt"
@@ -29,7 +29,7 @@ func main() {
 				Name: "build",
 				Steps: []func() error{
 					func() error {
-						return build.Exec(nil, "go", "build", "-o", fmt.Sprintf("%s/app", _out), _pkg)
+						return build.Exec(nil, "vgo", "build", "-o", fmt.Sprintf("%s/app", _out), _pkg)
 					},
 				},
 			},
